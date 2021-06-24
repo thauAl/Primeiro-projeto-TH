@@ -1,0 +1,95 @@
+body{
+    background-color: rgba(248, 3, 3, 0.705);
+
+}
+/*manipulando fotes de texto
+Para sabermos todas fotes e texto utilizamos  o site sie text a
+ */
+h1{
+    width: 100%;
+    color: blue;
+    font-family: fantasy;
+}
+span{
+    width: 50%;
+    color: blue;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    font-variant: small-caps;
+    background-color:sandybrown;
+    display: inline-block;
+    margin-right: -4px;
+    margin-top: 30px;
+}
+/* Para modificar tudo no meu site usa essa opção */
+html,body{
+    height: 100%
+    ;
+}
+*{
+    width: 100%;
+    height: left;
+    padding: 0px;
+    margin: auto;
+    text-decoration-line: none;
+    color: darkgreen;
+    
+}
+.menu{
+    border: 2px rgb(51, 47, 47) solid;
+  width: 70px;
+  font-size: 30px;
+  text-align: center;
+  margin:auto;
+ color: rgb(23, 255, 15);
+  padding-left: 5px;
+ /* padding-right 10px;*/
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#plan1{
+    width: 50%;
+    margin: 10px;
+}
+#plan2 {
+    width: 50%;
+    margin: 10px;
+}
+#primeiro{
+    margin:10px;
+    width: 100px;
+}
+#segundo{
+    width: 80px;
+    margin: 10px;
+}
+#terceiro{
+    width: 100px;
+    margin: 10px;
+
+}
+#quarto{
+    width: 80px;
+    margin: 10px;
+}
+#lista1{
+    color: rgb(94, 255, 0);
+}
+#lista2{
+    color: royalblue;
+}
+#lista3{
+    color: saddlebrown;
+}
+/*.modificartext p{
+    font-size: 35px;
+}*/
+.overflow{
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    background-color: rgb(5, 0, 0);
+    overflow: scroll;
+    font-size: 10px;
+   }

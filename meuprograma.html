@@ -1,0 +1,167 @@
+<meta charset="UTF-8">
+<h1> Meu projeto </h1>
+<br>
+<input/>
+<button>Chute sua resposta</button>
+<div><script>
+ // funçoes feitas por mim de ajuda 
+ function pulaLinha() {document.write("<br>")} 
+//function entradaSite() {alert("Olá");alert("Quer entrar ?") }
+     // funçoes com parametro 
+   function mostra(frase) {
+        document.write(frase) 
+       pulaLinha()
+     }
+    //function calcula(altura, peso){
+        //var Imc = peso/(altura * altura)
+         //return Imc;
+    //}
+    //variaveis (var ou let)
+    //var nome = prompt("infome seu nome")
+    //var vitorias = parseInt (prompt("informe o numero de vitorias "))
+    //var empates = parseInt(prompt("informr o numero de empates"))
+    //var pontos = (vitorias * 3) + empates
+    // açoes do html  
+  //mostra(nome +" seu time tem : " + pontos)
+   //if (pontos > 28) {
+   //mostra ("seu time esta melhor que no ano passado")
+  // }
+   //if (pontos < 28) { mostra("seu time esta pior que no ano passado")}
+    
+  //if (pontos == 28) {
+    //  mostra("seu time esta igual")
+  //}
+
+   //funçoes prontas do propio html
+   //math.round()
+   //document.querySelector()
+   //alert()
+   //document.write()
+   //prompt()
+   //parseInt()
+   //console.log() Para fazer testes peolo console do navegador 
+
+//var chute = 5
+//var seuChute = parseInt(prompt("De seu paupite de chute!!"))
+
+//if (chute == seuChute) {
+  //  mostra ("Você acetou !!")
+//}
+
+
+//if (chute != seuChute) {
+  //  mostra("Você errou!! o correto é " + chute)
+
+//}
+  //  var senha = prompt("Entre com sua senha");
+
+//if (senha == calopsitaazul) {
+  //  alert("Acesso liberado!");    
+//} 
+//else{
+  //  mostra("acesso negado!!")
+//}
+
+
+
+//var anoCopa = 2
+//var limite = parseInt(prompt("fale ate onde você quer ver a copa: "))
+
+
+//while(anoCopa <= limite){
+//    mostra ("teve copa em "+ anoCopa)
+ //   anoCopa = anoCopa + 2;
+//}
+
+//for(var multiplicador = 1; multiplicador <= 10; multiplicador++) {
+
+//mostra(7 * multiplicador); //é outras forma de fazer um multiplicador 
+
+//}
+//for(var estrelinha = 1; estrelinha <= 10; estrelinha++){
+
+  //  for(coluna =1; coluna <= 10; coluna++){
+    //document.write("*")
+ // }
+  //pulaLinha()
+//}
+</script>
+<div>
+<script>
+
+    function sorteia() {
+
+       return Math.round(Math.random() * 10);
+
+    }
+
+    function sorteiaNumeros(quantidade) {
+
+        var segredos = [];
+
+        var numero = 1;
+
+        while(numero <= quantidade) {
+
+              var numeroAleatorio = sorteia();
+              var achou = false;
+
+              if (numeroAleatorio !== 0) {
+                     for(var posicao = 0; posicao < segredos.length; posicao++) {
+
+                           if(segredos[posicao] == numeroAleatorio){
+                                achou = true;
+                                break;
+                           }
+
+                     }
+
+                     if (achou == false) {
+                           segredos.push(numeroAleatorio);
+                           numero++;
+                     }
+              }
+
+        }
+
+        return segredos;
+
+    }
+
+    var segredos = sorteiaNumeros(3);
+
+
+    var input = document.querySelector("input");
+    input.focus();
+
+    function verifica() {
+
+       var achou = false;
+
+       for(var posicao = 0; posicao < segredos.length; posicao++) {
+
+              if(input.value == segredos[posicao]) {
+
+                     alert("Você ACERTOU!");
+                     achou = true;
+                     break;
+              } 
+       }
+
+       if(achou == false) {
+
+              alert("Você ERROU!");
+       }
+
+       input.value = "";
+       input.focus();
+
+    }
+
+    var button = document.querySelector("button");
+
+    button.onclick = verifica;
+
+
+</script>
+</div>
