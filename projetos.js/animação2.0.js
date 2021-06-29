@@ -2,7 +2,7 @@
 
 <canvas width="600" height="400"> </canvas>
 
-<script>
+
 
 function desenhaQuadrado (x, y, cor) {    
 
@@ -24,4 +24,3 @@ for(var x = 0; x < 600 ; x = x + 50){
     desenhaQuadrado(x, 0, 'yellow')
     desenhaQuadrado(x, 50, 'red')
 }
-</script>

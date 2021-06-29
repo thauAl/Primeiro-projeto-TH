@@ -1,6 +1,6 @@
 <canvas width="600" height="400"> </canvas>
 
-<script>
+
 
 var cores =['blue', 'red', 'green']
 var indiceCorAtual = 0
@@ -34,5 +34,3 @@ return false; // para não exibir o menu padrão do canvas
 }
 
 tela.oncontextmenu = mudaCor;
-
-</script> 

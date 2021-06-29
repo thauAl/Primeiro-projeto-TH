@@ -1,6 +1,6 @@
-<meta charset="UTF-8">
+
 <title> Meu IMC </title>
-<script>
+
 
     function pulaLinha() {
 
@@ -46,5 +46,3 @@ if (imc >= 18.5 && imc <= 35) {
         mostra("Seu IMC esta otimo")
     }
 
-
-</script>

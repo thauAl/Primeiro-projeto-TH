@@ -1,5 +1,5 @@
-    <meta charset = "UTF8" meta/>
-<script>
+  
+
 
 function pulaLinha() {
     document.write("<br>") 
@@ -38,4 +38,3 @@ if (meuChute == chute) {
 }
 }
 
-</script>
